@@ -47,7 +47,7 @@
 .btn-primary {
   display: inline-block;
   padding: 14px 28px;
-  background: var(--color-dark);
+  background: var(--color-green);
   color: var(--color-white);
   border-radius: 8px;
   text-decoration: none;
@@ -56,7 +56,7 @@
 }
 
 .btn-primary:hover {
-  background: #343434;
+  background: #35956a;
   transform: translateY(-2px);
 }
 
