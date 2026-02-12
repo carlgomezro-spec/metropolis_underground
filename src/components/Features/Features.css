@@ -113,6 +113,10 @@
     border-radius: 0;
   }
 
+  .feature-headline {
+    display: none;
+  }
+
   .feature-overlay {
     top: 24px;
     left: 50%;

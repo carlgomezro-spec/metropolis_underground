@@ -17,8 +17,9 @@ import feature3Mobile from "../../assets/feature_3_mobile.jpg";
 function Features() {
   return (
     <section id="features" className="features">
-      <span >New Features</span>
-      <h2>Why travel with us?</h2>
+      
+      <span className="features-eyebrow">New Features</span>
+      <h2 className="features-title">Why travel with us?</h2>
 
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -39,7 +40,12 @@ function Features() {
             </picture>
 
             <div className="feature-overlay">
-              <p>Plan, pay, and travel with the #1 mobility app</p>
+              <h3 className="feature-headline">
+                All your journeys in one place
+              </h3>
+              <p className="feature-text">
+                Plan, pay, and travel with the #1 mobility app
+              </p>
             </div>
           </div>
         </SwiperSlide>
@@ -49,11 +55,16 @@ function Features() {
           <div className="feature-slide">
             <picture>
               <source media="(max-width: 768px)" srcSet={feature2Mobile} />
-              <img src={feature2} alt="Incidents alerts" />
+              <img src={feature2} alt="Real-time arrivals" />
             </picture>
 
             <div className="feature-overlay">
-              <p>See arrivals in real time and choose the best route for you</p>
+              <h3 className="feature-headline">
+                Real-time insights
+              </h3>
+              <p className="feature-text">
+                See arrivals in real time and choose the best route for you
+              </p>
             </div>
           </div>
         </SwiperSlide>
@@ -63,14 +74,20 @@ function Features() {
           <div className="feature-slide">
             <picture>
               <source media="(max-width: 768px)" srcSet={feature3Mobile} />
-              <img src={feature3} alt="Recharge balance" />
+              <img src={feature3} alt="Service alerts" />
             </picture>
 
             <div className="feature-overlay">
-              <p>Stay updated about incident or unexpected changes</p>
+              <h3 className="feature-headline">
+                Stay ahead of disruptions
+              </h3>
+              <p className="feature-text">
+                Stay updated about incidents or unexpected changes
+              </p>
             </div>
           </div>
         </SwiperSlide>
+
       </Swiper>
     </section>
   );
