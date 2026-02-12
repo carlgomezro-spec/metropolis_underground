@@ -1,6 +1,11 @@
+/* ==============================
+   FEATURES SECTION
+============================== */
+
 .features {
   padding: 100px 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .features-label {
@@ -16,45 +21,62 @@
   margin-bottom: 48px;
 }
 
-/* Swiper ocupa casi todo el ancho */
+/* ==============================
+   SWIPER
+============================== */
+
 .features-swiper {
   width: 100%;
 }
 
-/* Slide */
+/* ==============================
+   SLIDE (CONTENEDOR REAL)
+============================== */
+
 .feature-slide {
   position: relative;
   width: 100%;
+  max-width: 1200px;        /* 👈 MISMO ANCHO QUE LA IMAGEN */
   height: 70vh;
-  display: flex;
-  justify-content: center;
-}
-
-.feature-slide img {
-  width: 100%;
-  max-width: 1200px; /* 👈 aire a los lados */
-  height: 100%;
-  object-fit: cover;
+  margin: 0 auto;           /* 👈 CENTRADO REAL */
+  overflow: hidden;
   border-radius: 24px;
 }
 
-/* Texto encima */
+/* Imagen */
+.feature-slide picture,
+.feature-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.feature-slide picture img {
+  object-fit: cover;
+}
+
+/* ==============================
+   OVERLAY TEXTO (DESKTOP)
+============================== */
+
 .feature-overlay {
   position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 640px;
-  padding: 24px 32px;
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(8px);
-  border-radius: 16px;
-  color: white;
+  top: 50%;
+  left: 130px;               /* ahora sí desde el borde real */
+  transform: translateY(-50%);
+
+  max-width: 420px;
+
+  color: black;
+  text-align: left;
+
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.35);
 }
 
 .feature-overlay h3 {
   font-size: 28px;
   margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .feature-overlay p {
@@ -62,7 +84,14 @@
   opacity: 0.9;
 }
 
-/* Pagination */
+/* ==============================
+   PAGINATION
+============================== */
+
+.swiper-pagination {
+  bottom: 24px !important;
+}
+
 .swiper-pagination-bullet {
   background: #d0d0d0;
   opacity: 1;
@@ -72,15 +101,22 @@
   background: #000;
 }
 
-/* Mobile */
+/* ==============================
+   MOBILE
+============================== */
+
 @media (max-width: 768px) {
   .feature-slide {
     height: 420px;
+    border-radius: 0;
   }
 
   .feature-overlay {
-    bottom: 10%;
-    padding: 16px 20px;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: calc(100% - 32px);
   }
 
   .feature-overlay h3 {
