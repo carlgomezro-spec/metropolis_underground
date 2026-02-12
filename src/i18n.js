@@ -5,7 +5,7 @@ const resources = {
   en: {
     translation: {
       appName: "Metropolis Underground",
-      tagline: "Move smarter through the city.",
+      tagline: "Move smarter through the city",
       getApp: "Get the app",
       contact: "Contact us",
       email: "info@mu.com",
@@ -17,7 +17,7 @@ const resources = {
   es: {
     translation: {
       appName: "Metropolis Underground",
-      tagline: "Muévete de forma inteligente por la ciudad.",
+      tagline: "Muévete de forma inteligente por la ciudad",
       getApp: "Descarga la app",
       contact: "Contacto",
       email: "info@mu.com",
@@ -29,7 +29,7 @@ const resources = {
   fr: {
     translation: {
       appName: "Metropolis Underground",
-      tagline: "Déplacez-vous plus intelligemment en ville.",
+      tagline: "Déplacez-vous plus intelligemment en ville",
       getApp: "Téléchargez l'application",
       contact: "Contact",
       email: "info@mu.com",

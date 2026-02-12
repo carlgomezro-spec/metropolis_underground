@@ -17,7 +17,7 @@ import feature3Mobile from "../../assets/feature_3_mobile.jpg";
 function Features() {
   return (
     <section id="features" className="features">
-      <span className="features-label">New Features</span>
+      <span >New Features</span>
       <h2>Why travel with us?</h2>
 
       <Swiper

@@ -1,5 +1,4 @@
 .highlights {
-  padding: 120px 40px;
   text-align: center;
 }
 
@@ -67,9 +66,7 @@
 }
 
 @media (max-width: 600px) {
-  .highlights {
-    padding: 80px 20px;
-  }
+  
 
   .highlights-title {
     font-size: 32px;

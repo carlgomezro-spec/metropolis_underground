@@ -3,7 +3,6 @@
 ============================== */
 
 .features {
-  padding: 100px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -89,7 +88,9 @@
 ============================== */
 
 .swiper-pagination {
-  bottom: 24px !important;
+  position: relative !important;
+  margin-top: 32px;
+  bottom: auto !important;
 }
 
 .swiper-pagination-bullet {
@@ -100,6 +101,7 @@
 .swiper-pagination-bullet-active {
   background: #000;
 }
+
 
 /* ==============================
    MOBILE

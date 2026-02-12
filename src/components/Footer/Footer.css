@@ -1,45 +1,53 @@
+/* ==============================
+   FOOTER
+============================== */
+
 .footer {
   background: var(--color-dark);
   color: white;
-  padding: 100px 20px 40px;
-  text-align: center;
+  padding: 80px 20px 40px;
+  text-align: center; /* 👈 mobile centrado */
 }
 
 .footer-content {
-  max-width: 420px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 48px;
+  align-items: center; /* 👈 centra todo en móvil */
 }
 
-/* TITLE */
-.footer-title {
-  font-size: 24px;
-  font-weight: 700;
+/* ==============================
+   BRAND
+============================== */
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-/* SECTIONS */
-.footer-section {
+.footer-logo {
+  width: 250px;
+}
+
+
+
+/* ==============================
+   DOWNLOAD
+============================== */
+
+.footer-download {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  align-items: center;
 }
 
-.footer-section h4 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.footer-section p {
-  font-size: 15px;
-  opacity: 0.75;
-}
-
-/* STORE BADGES */
 .store-link img {
-  width: 180px;
-  margin: 0 auto;
+  width: 160px;
   transition: transform 0.2s ease;
 }
 
@@ -47,12 +55,21 @@
   transform: translateY(-3px);
 }
 
-/* SOCIAL */
+/* ==============================
+   SOCIAL + LANGUAGE
+============================== */
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
 .footer-social {
   display: flex;
-  justify-content: center;
   gap: 18px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer-social svg {
@@ -65,12 +82,11 @@
   opacity: 1;
 }
 
-/* LANGUAGE */
 .footer-language {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 8px;
+  font-size: 14px;
   opacity: 0.85;
 }
 
@@ -78,7 +94,7 @@
   background: transparent;
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -86,11 +102,50 @@
   color: black;
 }
 
-/* BOTTOM */
+/* ==============================
+   BOTTOM
+============================== */
+
 .footer-bottom {
-  margin-top: 70px;
-  padding-top: 25px;
+  margin-top: 50px;
+  padding-top: 24px;
   border-top: 1px solid rgba(255,255,255,0.1);
   font-size: 13px;
   opacity: 0.6;
+}
+
+/* ==============================
+   DESKTOP
+============================== */
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    align-items: start;
+  }
+
+  .footer-brand {
+    align-items: flex-start;
+  }
+
+  .footer-download {
+    align-items: flex-start;
+  }
+
+  .footer-meta {
+    align-items: flex-end;
+  }
+
+  .footer-language {
+    justify-content: flex-end;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
 }
