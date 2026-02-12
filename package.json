@@ -8,14 +8,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite preview"
+    "start": "serve -s dist -l 0.0.0.0:$PORT"
   },
   "dependencies": {
     "express": "^5.2.1",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "serve": "^14.2.5",
     "swiper": "^12.1.0"
   },
   "devDependencies": {
