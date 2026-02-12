@@ -6,8 +6,13 @@ import "swiper/css/pagination";
 import "./Features.css";
 
 import feature1 from "../../assets/feature1.jpg";
+import feature1Mobile from "../../assets/feature_1_mobile.jpg";
+
 import feature2 from "../../assets/feature2.jpg";
+import feature2Mobile from "../../assets/feature_2_mobile.jpg";
+
 import feature3 from "../../assets/feature3.jpg";
+import feature3Mobile from "../../assets/feature_3_mobile.jpg";
 
 function Features() {
   return (
@@ -25,35 +30,44 @@ function Features() {
         }}
         className="features-swiper"
       >
+        {/* SLIDE 1 */}
         <SwiperSlide>
           <div className="feature-slide">
-            <img src={feature1} alt="Plan your trip" />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={feature1Mobile} />
+              <img src={feature1} alt="Plan your trip" />
+            </picture>
 
             <div className="feature-overlay">
-              <h3>Plan your trip in real time</h3>
-              <p>Know exactly when your train arrives.</p>
+              <p>Plan, pay, and travel with the #1 mobility app</p>
             </div>
           </div>
         </SwiperSlide>
 
+        {/* SLIDE 2 */}
         <SwiperSlide>
           <div className="feature-slide">
-            <img src={feature2} alt="Incidents alerts" />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={feature2Mobile} />
+              <img src={feature2} alt="Incidents alerts" />
+            </picture>
 
             <div className="feature-overlay">
-              <h3>Get incidents in real time</h3>
-              <p>Receive alerts about service changes.</p>
+              <p>See arrivals in real time and choose the best route for you</p>
             </div>
           </div>
         </SwiperSlide>
 
+        {/* SLIDE 3 */}
         <SwiperSlide>
           <div className="feature-slide">
-            <img src={feature3} alt="Recharge balance" />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={feature3Mobile} />
+              <img src={feature3} alt="Recharge balance" />
+            </picture>
 
             <div className="feature-overlay">
-              <h3>Recharge and track balance</h3>
-              <p>Manage your metro card easily.</p>
+              <p>Stay updated about incident or unexpected changes</p>
             </div>
           </div>
         </SwiperSlide>
