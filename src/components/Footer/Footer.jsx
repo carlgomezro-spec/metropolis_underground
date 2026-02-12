@@ -10,6 +10,7 @@ import {
 
 import appStoreBadge from "../../assets/appstore-badge.svg";
 import googlePlayBadge from "../../assets/googleplay-badge.png";
+import logo from "../../assets/logo_white_footer.png";
 
 function Footer() {
   const { t, i18n } = useTranslation();
@@ -22,14 +23,19 @@ function Footer() {
 
   return (
     <footer id="contact" className="footer">
-      <div className="footer-content">
+      <div className="footer-content container">
 
-        <h3 className="footer-title">{t("appName")}</h3>
-        <p>{t("tagline")}</p>
+        {/* BRAND */}
+        <div className="footer-brand">
+          <img
+            src={logo}
+            alt="Metropolis Underground logo"
+            className="footer-logo"
+          />
+        </div>
 
-        <div className="footer-section">
-          <h4>{t("getApp")}</h4>
-
+        {/* DOWNLOAD */}
+        <div className="footer-download">
           <a href="#" className="store-link">
             <img src={appStoreBadge} alt="App Store" />
           </a>
@@ -39,30 +45,26 @@ function Footer() {
           </a>
         </div>
 
-        <div className="footer-section">
-          <h4>{t("contact")}</h4>
-          <p>{t("email")}</p>
-          <p>{t("phone")}</p>
-          <p>{t("address")}</p>
-        </div>
+        {/* SOCIAL + LANGUAGE */}
+        <div className="footer-meta">
+          <div className="footer-social">
+            <FaFacebookF />
+            <FaLinkedinIn />
+            <FaTwitter />
+            <FaInstagram />
+          </div>
 
-        <div className="footer-social">
-          <FaFacebookF />
-          <FaLinkedinIn />
-          <FaTwitter />
-          <FaInstagram />
-        </div>
-
-        <div className="footer-language">
-          <FaGlobe />
-          <select
-            onChange={handleLanguageChange}
-            value={i18n.language}
-          >
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-          </select>
+          <div className="footer-language">
+            <FaGlobe />
+            <select
+              onChange={handleLanguageChange}
+              value={i18n.language}
+            >
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+            </select>
+          </div>
         </div>
 
       </div>
