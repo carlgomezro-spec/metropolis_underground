@@ -199,15 +199,6 @@ The Figma design file includes:
 - Integration with app download analytics
 - Enhanced micro-interactions
 
-## 👤 Author
-
-[Your Name]
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
-
-## 📄 License
-
-This project was created as part of a design challenge for Metropolis Underground.
 
 ---
 
