@@ -1,14 +1,30 @@
 .hero {
-  background: var(--color-dark);
-  color: white;
-  padding: 120px 20px;
+  position: relative; /* necesario para el overlay */
+  background-image: url("../../assets/hero_image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  min-height: 90vh;
 }
 
+/* Overlay oscuro sin tocar nada más */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro semi-transparente */
+  z-index: 0;
+}
+
+/* Contenido encima del overlay */
 .hero-content {
+  position: relative; /* importante para que quede encima del overlay */
   max-width: 600px;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -16,6 +32,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: var(--color-green);
 }
 
 .hero p {
@@ -23,13 +40,14 @@
   line-height: 1.6;
   margin-bottom: 30px;
   opacity: 0.85;
+  color: var(--color-white);
 }
 
 .btn-primary {
   display: inline-block;
   padding: 14px 28px;
-  background: var(--color-blue);
-  color: white;
+  background: var(--color-dark);
+  color: var(--color-white);
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -37,7 +55,7 @@
 }
 
 .btn-primary:hover {
-  background: #3a6fb3;
+  background: #343434;
   transform: translateY(-2px);
 }
 

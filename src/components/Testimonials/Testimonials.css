@@ -13,7 +13,7 @@
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
-  color: var(--color-dark);
+  color: var(--color-green);
 }
 
 .testimonials-grid {
@@ -46,7 +46,7 @@
 .testimonial-author {
   font-weight: 600;
   font-size: 14px;
-  color: var(--color-blue);
+  color: var(--color-green);
   letter-spacing: 0.5px;
 }
 
