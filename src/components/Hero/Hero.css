@@ -1,31 +1,32 @@
 .hero {
-  position: relative; /* necesario para el overlay */
+  position: relative;
+  min-height: 100vh;
+
   background-image: url("../../assets/hero_image.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 80vh;
+
   display: flex;
   align-items: center;
+
+  padding-top: 120px;
 }
 
-/* Overlay oscuro sin tocar nada más */
+/* overlay oscuro */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Negro semi-transparente */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
-/* Contenido encima del overlay */
 .hero-content {
-  position: relative; /* importante para que quede encima del overlay */
-  max-width: 600px;
+  position: relative;
   z-index: 1;
+  max-width: 600px;
 }
+
 
 .hero h1 {
   font-size: 42px;

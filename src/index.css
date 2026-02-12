@@ -13,15 +13,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f7f7f7;
   color: var(--color-dark);
 }
 
 section {
   padding: 80px 20px;
-}
-
-main {
-  padding-top: 100px;
 }
 

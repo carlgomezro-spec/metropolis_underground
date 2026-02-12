@@ -15,7 +15,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <header className={`navbar ${scrolled ? "scrolled" : "transparent"}`}>
       <div className="container navbar-content">
         
         <div className="logo">
