@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo_white_navbar.png";
 
 
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);

@@ -4,6 +4,7 @@ import Features from "./components/Features/Features.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Highlights from "./components/Highlights/Highlights.jsx"; 
 import Footer from "./components/Footer/Footer.jsx";
+import "./i18n.js";
 import "./index.css";
 
 function App() {

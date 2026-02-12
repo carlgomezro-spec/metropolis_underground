@@ -1,93 +1,96 @@
 .footer {
   background: var(--color-dark);
   color: white;
-  padding-top: 80px;
+  padding: 100px 20px 40px;
+  text-align: center;
 }
 
 .footer-content {
-  max-width: 1100px;
+  max-width: 420px;
   margin: 0 auto;
-  padding: 0 20px 60px;
-  display: grid;
-  gap: 50px;
-}
-
-.footer-title {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.footer-tagline {
-  opacity: 0.7;
-  font-size: 14px;
-}
-
-.footer-links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 48px;
 }
 
-.footer-links a {
-  color: white;
-  text-decoration: none;
+/* TITLE */
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* SECTIONS */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  font-size: 15px;
   opacity: 0.75;
-  font-size: 14px;
+}
+
+/* STORE BADGES */
+.store-link img {
+  width: 180px;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.store-link img:hover {
+  transform: translateY(-3px);
+}
+
+/* SOCIAL */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 20px;
+}
+
+.footer-social svg {
+  cursor: pointer;
+  opacity: 0.8;
   transition: opacity 0.2s ease;
 }
 
-.footer-links a:hover {
+.footer-social svg:hover {
   opacity: 1;
 }
 
-.footer-download {
+/* LANGUAGE */
+.footer-language {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.85;
 }
 
-.store-btn {
-  padding: 12px 20px;
-  border-radius: 8px;
-  border: none;
-  background: var(--color-blue);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.store-btn:hover {
-  transform: translateY(-2px);
-  background: #3a6fb3;
-}
-
-/* Variante secundaria más sutil */
-.store-btn.secondary {
+.footer-language select {
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-.store-btn.secondary:hover {
-  background: rgba(255,255,255,0.1);
+.footer-language select option {
+  color: black;
 }
 
+/* BOTTOM */
 .footer-bottom {
+  margin-top: 70px;
+  padding-top: 25px;
   border-top: 1px solid rgba(255,255,255,0.1);
-  padding: 20px;
-  text-align: center;
   font-size: 13px;
   opacity: 0.6;
-}
-
-@media (min-width: 768px) {
-  .footer-content {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-  }
-
-  .footer-download {
-    flex-direction: row;
-  }
 }
