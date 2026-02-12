@@ -5,13 +5,23 @@
   width: 100%;
   padding: 20px 0;
   z-index: 1000;
-  transition: all 0.3s ease;
+
+  /* overlay */
+  background: transparent;
+
+  transition: 
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    padding 0.3s ease;
 }
 
+
 .navbar.scrolled {
-  background: var(--color-dark);
+  background: rgba(20, 20, 20, 0.95); /* o var(--color-dark) */
+  backdrop-filter: blur(6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 
 .navbar-content {
