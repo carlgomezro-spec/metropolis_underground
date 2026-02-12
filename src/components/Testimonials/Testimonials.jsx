@@ -4,6 +4,7 @@ function Testimonials() {
   return (
     <section id="testimonials" className="testimonials">
       <div className="container">
+        <span className="testimonials-label">Testimonials</span>
         <h2>What our customers say</h2>
 
         <div className="testimonials-grid">
