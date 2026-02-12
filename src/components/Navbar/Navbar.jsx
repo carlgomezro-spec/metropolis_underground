@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
+import logo from "../../assets/logo_white_navbar.png";
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,13 +21,16 @@ function Navbar() {
       <div className="container navbar-content">
         
         <div className="logo">
-          MU
+          <a href="#home">
+            <img src={logo} alt="Metropolis Underground logo" />
+          </a>
         </div>
 
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
           <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
           <a href="#features" onClick={() => setMenuOpen(false)}>Features</a>
           <a href="#testimonials" onClick={() => setMenuOpen(false)}>Testimonials</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
 
         <div 
