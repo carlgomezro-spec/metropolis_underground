@@ -16,10 +16,9 @@ import feature3Mobile from "../../assets/feature3_mb.webp";
 
 function Features() {
   return (
-    <section id="features" className="features">
-      
+    <section id="features" className="features" aria-labelledby="features-title">
       <span className="features-eyebrow">New Features</span>
-      <h2 className="features-title">Why travel with us?</h2>
+      <h2 id="features-title" className="features-title">Why travel with us?</h2>
 
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -30,13 +29,18 @@ function Features() {
           disableOnInteraction: false,
         }}
         className="features-swiper"
+        aria-label="Features carousel"
       >
         {/* SLIDE 1 */}
-        <SwiperSlide>
+        <SwiperSlide aria-label="Feature 1 of 3">
           <div className="feature-slide">
             <picture>
               <source media="(max-width: 768px)" srcSet={feature1Mobile} />
-              <img src={feature1} alt="Plan your trip" />
+              <img
+                src={feature1}
+                alt="Mobile app interface showing trip planning, ticket payment and journey overview in one screen"
+                loading="lazy"
+              />
             </picture>
 
             <div className="feature-overlay">
@@ -47,15 +51,23 @@ function Features() {
                 Plan, pay, and travel with the #1 mobility app
               </p>
             </div>
+
+            <a href="#download" className="btn btn-dark feature-btn" aria-label="Learn more about journey planning features">
+              Know More
+            </a>
           </div>
         </SwiperSlide>
 
         {/* SLIDE 2 */}
-        <SwiperSlide>
+        <SwiperSlide aria-label="Feature 2 of 3">
           <div className="feature-slide">
             <picture>
               <source media="(max-width: 768px)" srcSet={feature2Mobile} />
-              <img src={feature2} alt="Real-time arrivals" />
+              <img
+                src={feature2}
+                alt="Mobile screen displaying real-time public transport arrivals and route options"
+                loading="lazy"
+              />
             </picture>
 
             <div className="feature-overlay">
@@ -66,15 +78,23 @@ function Features() {
                 See arrivals in real time and choose the best route for you
               </p>
             </div>
+
+            <a href="#download" className="btn btn-dark feature-btn" aria-label="Learn more about real-time insights">
+              Know More
+            </a>
           </div>
         </SwiperSlide>
 
         {/* SLIDE 3 */}
-        <SwiperSlide>
+        <SwiperSlide aria-label="Feature 3 of 3">
           <div className="feature-slide">
             <picture>
               <source media="(max-width: 768px)" srcSet={feature3Mobile} />
-              <img src={feature3} alt="Service alerts" />
+              <img
+                src={feature3}
+                alt="App interface showing service alerts and disruption notifications for transport lines"
+                loading="lazy"
+              />
             </picture>
 
             <div className="feature-overlay">
@@ -85,9 +105,12 @@ function Features() {
                 Stay updated about incidents or unexpected changes
               </p>
             </div>
+
+            <a href="#download" className="btn btn-dark feature-btn" aria-label="Learn more about disruption alerts">
+              Know More
+            </a>
           </div>
         </SwiperSlide>
-
       </Swiper>
     </section>
   );
