@@ -39,7 +39,7 @@ function Testimonials() {
     <section id="testimonials" className="testimonials">
       <div className="container">
         <span className="testimonials-label">Testimonials</span>
-        <h2>What’s our customer says?</h2>
+        <h2>What our customers say?</h2>
 
         {/* MOBILE SLIDER */}
         <div className="testimonial-wrapper mobile">
