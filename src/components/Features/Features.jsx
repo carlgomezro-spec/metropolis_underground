@@ -5,14 +5,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./Features.css";
 
-import feature1 from "../../assets/feature1.jpg";
-import feature1Mobile from "../../assets/feature_1_mobile.jpg";
+import feature1 from "../../assets/feature1_dt.webp";
+import feature1Mobile from "../../assets/feature1_mb.webp";
 
-import feature2 from "../../assets/feature2.jpg";
-import feature2Mobile from "../../assets/feature_2_mobile.jpg";
+import feature2 from "../../assets/feature2_dt.webp";
+import feature2Mobile from "../../assets/feature2_mb.webp";
 
-import feature3 from "../../assets/feature3.jpg";
-import feature3Mobile from "../../assets/feature_3_mobile.jpg";
+import feature3 from "../../assets/feature3_dt.webp";
+import feature3Mobile from "../../assets/feature3_mb.webp";
 
 function Features() {
   return (
