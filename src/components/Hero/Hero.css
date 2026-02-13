@@ -5,6 +5,7 @@
   background-image: url("../../assets/hero_image.webp");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
@@ -27,7 +28,6 @@
   max-width: 600px;
 }
 
-
 .hero h1 {
   font-size: 42px;
   font-weight: 700;
@@ -40,7 +40,7 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
-  opacity: 0.85;
+  opacity: 0.9; /* pequeño ajuste para contraste */
   color: var(--color-white);
 }
 
