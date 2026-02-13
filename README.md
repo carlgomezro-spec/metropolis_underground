@@ -2,6 +2,9 @@
 
 > Promotional landing page for the modernized Metropolis Underground metro app
 
+![Metropolis Underground Landing Page Mockup](./src/assets/mockup.webp)
+
+
 [**View Live Demo →**](https://metropolis-underground.onrender.com)
 
 ---
