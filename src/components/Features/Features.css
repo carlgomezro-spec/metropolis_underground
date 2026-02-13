@@ -1,0 +1,162 @@
+/* ==============================
+   FEATURES SECTION
+============================== */
+
+.features {
+  text-align: center;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.features-eyebrow {
+  font-size: 14px;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.features-title {
+  font-size: 40px;
+  color: var(--color-green);
+  margin-bottom: 48px;
+}
+
+/* ==============================
+   SWIPER
+============================== */
+
+.features-swiper {
+  width: 100%;
+}
+
+/* ==============================
+   SLIDE
+============================== */
+
+.feature-slide {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 70vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.feature-slide picture,
+.feature-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.feature-slide picture img {
+  object-fit: cover;
+}
+
+/* ==============================
+   OVERLAY DESKTOP
+============================== */
+
+.feature-overlay {
+  position: absolute;
+  top: 50%;
+  left: 130px;
+  transform: translateY(-50%);
+  max-width: 420px;
+  color: black;
+  text-align: left;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.35);
+}
+
+.feature-headline {
+  font-size: 28px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.feature-text {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+/* ==============================
+   BOTÓN DESKTOP
+============================== */
+
+.feature-btn {
+  position: absolute;
+  left: 130px;
+  top: 50%;
+  transform: translateY(calc(-50% + 90px));
+  background-color: #191921;
+  transition: all 0.3s ease;
+}
+
+.feature-btn:hover {
+  background-color: #000000;
+  transform: translateY(calc(-50% + 88px)); /* -2px igual que el hero */
+}
+
+/* ==============================
+   PAGINATION
+============================== */
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 32px;
+  bottom: auto !important;
+}
+
+.swiper-pagination-bullet {
+  background: #d0d0d0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 768px) {
+
+  .feature-slide {
+    height: 420px;
+    border-radius: 0;
+  }
+
+  .feature-headline {
+    display: none;
+  }
+
+  .feature-overlay {
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: calc(100% - 32px);
+  }
+
+  .feature-text {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .feature-btn {
+    left: 50%;
+    bottom: 24px;
+    top: auto;
+    background-color: #191921;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
+
+  .feature-btn:hover {
+    background-color: #000000;
+    transform: translateX(-50%) translateY(-2px);
+  }
+}
